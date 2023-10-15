@@ -1,4 +1,5 @@
 // Function to create the calculator container and add functionality
+window.alert("This calculates only if you handle with keyboards !!")
 function createCalculator() {
     // Container
     const container = document.createElement('div');
@@ -94,7 +95,7 @@ function createCalculator() {
             } catch (error) {
                 displayInput.value = 'Error';
             }
-        } else if (key === 'C' || key === 'Escape') {
+        } else if (key === 'c' || key === 'Escape') {
             currentExpression = '';
             displayInput.value = '';
         } else if (key === 'Backspace') {
@@ -120,7 +121,7 @@ function createCalculator() {
                 } catch (error) {
                     displayInput.value = 'Error';
                 }
-            } else if (key === 'C') {
+            } else if (key === 'c') {
                 currentExpression = '';
                 displayInput.value = '';
             } else if (key === 'Backspace') {
