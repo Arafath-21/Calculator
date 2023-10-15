@@ -24,7 +24,7 @@ This project is a web-based calculator that allows users to perform basic arithm
 
 ## Demo
 
-You can see a live demo of the calculator [here](link-to-your-live-demo).
+You can see a live demo of the calculator [here](https://wondrous-cendol-9e91cb.netlify.app/).
 
 ## Installation
 
