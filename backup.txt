@@ -1,0 +1,40 @@
+// Container
+const container = document.createElement('div');
+container.classList.add('container','bg-primary',);
+// Row
+const row = document.createElement('div');
+row.classList.add('row');
+// Column
+const col = document.createElement('div');
+col.classList.add('col-md-12','col-lg-12');
+// Create a form element
+const formElement = document.createElement('form');
+
+// Create a div element with the "mb-3" class
+const divElement = document.createElement('div');
+divElement.classList.add('mb-3');
+
+// Create a label element with the "form-label" class
+const labelElement = document.createElement('label');
+labelElement.classList.add('form-label');
+labelElement.textContent = 'Calculator';
+
+// Create an input element with the "form-control" class and set its attributes
+const inputElement = document.createElement('input');
+inputElement.setAttribute('type', 'text');
+inputElement.classList.add('form-control');
+inputElement.setAttribute('id', 'exampleInput');
+inputElement.setAttribute('aria-describedby', 'textHelp');
+
+// Append the label, input, and divHelp elements to the divElement
+divElement.appendChild(labelElement);
+divElement.appendChild(inputElement);
+
+// Append the divElement to the formElement
+formElement.appendChild(divElement);
+
+// Append the content to the column
+col.appendChild(formElement);
+row.appendChild(col);
+container.append(row,col,formElement,divElement,labelElement,inputElement);
+document.body.append(container);
